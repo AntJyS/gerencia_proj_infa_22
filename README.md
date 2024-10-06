@@ -80,29 +80,3 @@ Las contribuciones son bienvenidas. Por favor, abre un issue o envía un pull re
 ## Licencia
 
 Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
-```
-
-### Explicación
-
-1. **Requisitos**:
-   - Lista los requisitos necesarios para ejecutar la aplicación.
-
-2. **Instalación**:
-   - Proporciona instrucciones paso a paso para clonar el repositorio, crear un entorno virtual, instalar dependencias y configurar la clave de API de OpenAI.
-
-3. **Ejecución**:
-   - Instrucciones para iniciar la aplicación Flask y acceder a ella en el navegador.
-
-4. **Estructura del Proyecto**:
-   - Describe la estructura del proyecto y el propósito de cada archivo/directorio.
-
-5. **Uso**:
-   - Explica cómo usar las diferentes funcionalidades de la aplicación.
-
-6. **Contribuciones**:
-   - Invita a otros a contribuir al proyecto.
-
-7. **Licencia**:
-   - Indica la licencia del proyecto.
-
-Este README proporcionará a otros desarrolladores la información necesaria para replicar y ejecutar el proyecto en sus entornos locales.
