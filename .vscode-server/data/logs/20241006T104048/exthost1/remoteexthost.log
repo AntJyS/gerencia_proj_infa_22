@@ -1,0 +1,40 @@
+2024-10-06 10:40:48.723 [info] Extension host with pid 764 started
+2024-10-06 10:40:48.778 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-10-06 10:40:48.839 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-10-06 10:40:48.844 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-10-06 10:40:48.844 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-10-06 10:40:48.940 [info] Eager extensions activated
+2024-10-06 10:40:48.940 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-10-06 10:40:48.940 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-10-06 10:42:14.468 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onStartupFinished'
+2024-10-06 10:42:14.469 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2024-10-06 10:43:02.745 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-10-06 10:43:02.745 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-10-06 10:43:02.745 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-10-06 10:43:40.352 [error] TypeError: e.onCancellationRequested is not a function
+    at vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:31:70601
+    at new Promise (<anonymous>)
+    at n7 (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:31:70571)
+    at ynt.C (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:3108:7898)
+    at ynt.fileSearch (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:3108:7093)
+    at f5t.$startFileSearch (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:643:7080)
+    at Ult.S (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:3108:41550)
+    at Ult.Q (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:3108:41328)
+    at Ult.M (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:3108:40416)
+    at Ult.L (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:3108:39520)
+    at NQ.value (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:3108:38314)
+    at x.B (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:733)
+    at x.fire (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:951)
+    at n6.fire (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:634:10283)
+    at BUi.A (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:634:13408)
+    at NQ.value (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:634:11827)
+    at x.B (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:733)
+    at x.fire (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:951)
+    at qFe.acceptChunk (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:634:8070)
+    at vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:634:7355
+    at NQ.value (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:3072:95815)
+    at x.B (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:733)
+    at x.fire (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:951)
+    at OMs.j.onload (vscode-file://vscode-app/c:/Users/Anthony/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:3072:94307) github.copilot.devcontainer.generateDevContainerConfig {"value":"GitHub.copilot-chat","_lower":"github.copilot-chat"}
+2024-10-06 10:46:11.758 [info] Extension host terminating: received terminate message from renderer
+2024-10-06 10:46:11.795 [info] Extension host with pid 764 exiting with code 0

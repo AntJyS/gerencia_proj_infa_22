@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacientes</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('static/images/medical-5459661_1280.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Lista de Pacientes</h1>
+        <div class="list-group">
+            {% for patient in patients %}
+                <div class="list-group-item">
+                    <h5 class="mb-1">{{ patient.name }}</h5>
+                    <a href="{{ url_for('download_file', filename=patient.pdf) }}" class="btn btn-primary">Descargar Historia Clinica</a>
+                    <button class="btn btn-info" onclick="showPatientDetails({{ patient.id }})">Ver Detalles</button>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="mt-4">
+            <a href="{{ url_for('home') }}" class="btn btn-secondary">Pagina Principal</a>
+        </div>
+    </div>
+
+    <!-- Patient Details Modal -->
+    <div class="modal fade" id="patientDetailsModal" tabindex="-1" aria-labelledby="patientDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="patientDetailsModalLabel">Detalles del Paciente</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Procedimientos</h6>
+                    <ul id="proceduresList"></ul>
+                    <h6>Examenes</h6>
+                    <ul id="examsList"></ul>
+                    <h6>Medicamentos</h6>
+                    <ul id="medicationsList"></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        function showPatientDetails(patientId) {
+            $.getJSON(`/patient_details/${patientId}`, function(data) {
+                $('#patientDetailsModalLabel').text(`Patient Details - ${data.name}`);
+                $('#proceduresList').empty();
+                $('#examsList').empty();
+                $('#medicationsList').empty();
+                data.procedures.forEach(function(procedure) {
+                    $('#proceduresList').append(`
+                        <li>
+                            ${procedure}
+                            <input type="text" class="datepicker form-control-sm ml-2" placeholder="Select Date">
+                            <button class="btn btn-sm btn-success ml-2" onclick="bookProcedure(${data.id}, '${procedure}')">Book Procedure</button>
+                        </li>
+                    `);
+                });
+                data.exams.forEach(function(exam) {
+                    $('#examsList').append(`
+                        <li>
+                            ${exam}
+                            <input type="text" class="datepicker form-control-sm ml-2" placeholder="Select Date">
+                            <button class="btn btn-sm btn-success ml-2" onclick="bookExam(${data.id}, '${exam}')">Book Exam</button>
+                        </li>
+                    `);
+                });
+                data.medications.forEach(function(medication) {
+                    $('#medicationsList').append(`
+                        <li>
+                            ${medication}
+                            <button class="btn btn-sm btn-warning ml-2" onclick="requestAuthorization(${data.id}, '${data.name}', '${medication}')">Request Authorization</button>
+                        </li>
+                    `);
+                });
+                $('.datepicker').datepicker({
+                    format: 'mm/dd/yyyy',
+                    startDate: '-3d'
+                });
+                $('#patientDetailsModal').modal('show');
+            });
+        }
+
+        function requestAuthorization(patientId, patientName, medication) {
+            $.ajax({
+                url: '/authorize_medication',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ patient_id: patientId, patient_name: patientName, medication: medication }),
+                success: function(response) {
+                    alert(`Authorization requested for ${medication} of patient ${patientName}`);
+                },
+                error: function(error) {
+                    alert('Error requesting authorization');
+                }
+            });
+        }
+
+        function bookProcedure(patientId, procedure) {
+            const date = $(`#proceduresList input[placeholder="Select Date"]`).val();
+            if (!date) {
+                alert('Please select a date for the procedure.');
+                return;
+            }
+            $.ajax({
+                url: '/book_procedure',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ patient_id: patientId, procedure: procedure, date: date }),
+                success: function(response) {
+                    alert(response.message);
+                },
+                error: function(error) {
+                    alert('Error booking procedure');
+                }
+            });
+        }
+
+        function bookExam(patientId, exam) {
+            const date = $(`#examsList input[placeholder="Select Date"]`).val();
+            if (!date) {
+                alert('Please select a date for the exam.');
+                return;
+            }
+            $.ajax({
+                url: '/book_exam',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ patient_id: patientId, exam: exam, date: date }),
+                success: function(response) {
+                    alert(response.message);
+                },
+                error: function(error) {
+                    alert('Error booking exam');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

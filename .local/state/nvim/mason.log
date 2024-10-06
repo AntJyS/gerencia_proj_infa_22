@@ -1,0 +1,94 @@
+[ERROR Fri Oct  4 17:42:36 2024] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.server_configurations.omnisharp' not found:
+	no field package.preload['lspconfig.server_configurations.omnisharp']
+cache_loader: module lspconfig.server_configurations.omnisharp not found
+cache_loader_lib: module lspconfig.server_configurations.omnisharp not found
+	no file './lspconfig/server_configurations/omnisharp.lua'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/share/luajit-2.1/lspconfig/server_configurations/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/server_configurations/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/server_configurations/omnisharp/init.lua'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/share/lua/5.1/lspconfig/server_configurations/omnisharp.lua'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/share/lua/5.1/lspconfig/server_configurations/omnisharp/init.lua'
+	no file './lspconfig/server_configurations/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/server_configurations/omnisharp.so'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/lib/lua/5.1/lspconfig/server_configurations/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Fri Oct  4 17:42:42 2024] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=lua-language-server) {}
+[INFO  Fri Oct  4 17:42:42 2024] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=stylua) {}
+[INFO  Fri Oct  4 17:42:46 2024] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=stylua)
+[INFO  Fri Oct  4 17:42:47 2024] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=lua-language-server)
+[ERROR Fri Oct  4 17:45:36 2024] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.server_configurations.omnisharp' not found:
+	no field package.preload['lspconfig.server_configurations.omnisharp']
+cache_loader: module lspconfig.server_configurations.omnisharp not found
+cache_loader_lib: module lspconfig.server_configurations.omnisharp not found
+	no file './lspconfig/server_configurations/omnisharp.lua'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/share/luajit-2.1/lspconfig/server_configurations/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/server_configurations/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/server_configurations/omnisharp/init.lua'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/share/lua/5.1/lspconfig/server_configurations/omnisharp.lua'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/share/lua/5.1/lspconfig/server_configurations/omnisharp/init.lua'
+	no file './lspconfig/server_configurations/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/server_configurations/omnisharp.so'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/lib/lua/5.1/lspconfig/server_configurations/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[ERROR Fri Oct  4 17:48:12 2024] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.server_configurations.omnisharp' not found:
+	no field package.preload['lspconfig.server_configurations.omnisharp']
+cache_loader: module lspconfig.server_configurations.omnisharp not found
+cache_loader_lib: module lspconfig.server_configurations.omnisharp not found
+	no file './lspconfig/server_configurations/omnisharp.lua'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/share/luajit-2.1/lspconfig/server_configurations/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/server_configurations/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/server_configurations/omnisharp/init.lua'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/share/lua/5.1/lspconfig/server_configurations/omnisharp.lua'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/share/lua/5.1/lspconfig/server_configurations/omnisharp/init.lua'
+	no file './lspconfig/server_configurations/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/server_configurations/omnisharp.so'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/lib/lua/5.1/lspconfig/server_configurations/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[ERROR Fri Oct  4 17:49:43 2024] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.server_configurations.omnisharp' not found:
+	no field package.preload['lspconfig.server_configurations.omnisharp']
+cache_loader: module lspconfig.server_configurations.omnisharp not found
+cache_loader_lib: module lspconfig.server_configurations.omnisharp not found
+	no file './lspconfig/server_configurations/omnisharp.lua'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/share/luajit-2.1/lspconfig/server_configurations/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/server_configurations/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/server_configurations/omnisharp/init.lua'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/share/lua/5.1/lspconfig/server_configurations/omnisharp.lua'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/share/lua/5.1/lspconfig/server_configurations/omnisharp/init.lua'
+	no file './lspconfig/server_configurations/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/server_configurations/omnisharp.so'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/lib/lua/5.1/lspconfig/server_configurations/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[ERROR Fri Oct  4 23:23:07 2024] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.server_configurations.omnisharp' not found:
+	no field package.preload['lspconfig.server_configurations.omnisharp']
+cache_loader: module lspconfig.server_configurations.omnisharp not found
+cache_loader_lib: module lspconfig.server_configurations.omnisharp not found
+	no file './lspconfig/server_configurations/omnisharp.lua'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/share/luajit-2.1/lspconfig/server_configurations/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/server_configurations/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/server_configurations/omnisharp/init.lua'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/share/lua/5.1/lspconfig/server_configurations/omnisharp.lua'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/share/lua/5.1/lspconfig/server_configurations/omnisharp/init.lua'
+	no file './lspconfig/server_configurations/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/server_configurations/omnisharp.so'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/lib/lua/5.1/lspconfig/server_configurations/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/build/nvim/parts/nvim/build/.deps/usr/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'

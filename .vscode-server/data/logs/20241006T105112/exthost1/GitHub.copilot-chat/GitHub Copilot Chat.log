@@ -1,0 +1,14 @@
+2024-10-06 10:51:14.109 [info] Can't use the Electron fetcher in this environment.
+2024-10-06 10:51:14.109 [info] Using the Helix fetcher.
+2024-10-06 10:51:14.109 [info] Initializing Git extension service.
+2024-10-06 10:51:14.109 [info] Successfully activated the vscode.git extension.
+2024-10-06 10:51:14.109 [info] Enablement state of the vscode.git extension: true.
+2024-10-06 10:51:14.109 [info] Successfully registered Git commit message provider.
+2024-10-06 10:51:14.709 [info] Logged in as AntJyS
+2024-10-06 10:51:14.735 [info] Removed 1 expired certificates
+2024-10-06 10:51:16.424 [info] Got Copilot token for AntJyS
+2024-10-06 10:51:16.784 [info] copilot token chat_enabled: true, sku: free_educational
+2024-10-06 10:51:16.784 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2024-10-06 10:51:16.792 [info] Registering default platform agent...
+2024-10-06 10:51:17.068 [info] Fetched model metadata in 639ms bbf4fff7-c997-47be-bc1b-f8411b17edb2
+2024-10-06 10:51:17.249 [info] activationBlocker from 'languageModelAccess' took for 2745ms

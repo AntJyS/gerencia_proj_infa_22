@@ -1,0 +1,43 @@
+2024-10-06 10:40:48.053 [info] 
+
+
+
+
+2024-10-06 10:40:48.053 [info] Extension host agent started.
+2024-10-06 10:40:48.060 [info] Started initializing default profile extensions in extensions installation folder. file:///home/antkta/.vscode-server/extensions
+2024-10-06 10:40:48.067 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/antkta/.vscode-server/extensions
+2024-10-06 10:40:48.276 [info] [127.0.0.1][e3ce8fd7][ManagementConnection] New connection established.
+2024-10-06 10:40:48.397 [info] [127.0.0.1][7f266c64][ExtensionHostConnection] New connection established.
+2024-10-06 10:40:48.401 [info] [127.0.0.1][7f266c64][ExtensionHostConnection] <764> Launched Extension Host Process.
+2024-10-06 10:42:09.843 [info] Getting Manifest... github.copilot
+2024-10-06 10:42:09.885 [info] Installing extension: github.copilot {"installPreReleaseVersion":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/antkta/.vscode-server/extensions/extensions.json","external":"file:///home/antkta/.vscode-server/extensions/extensions.json","path":"/home/antkta/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.94.0","date":"2024-10-02T13:08:12.626Z"}}
+2024-10-06 10:42:10.291 [info] Getting Manifest... github.copilot-chat
+2024-10-06 10:42:10.319 [info] Installing extension: github.copilot-chat {"installPreReleaseVersion":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64","dependecyOrPackExtensionInstall":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/antkta/.vscode-server/extensions/extensions.json","external":"file:///home/antkta/.vscode-server/extensions/extensions.json","path":"/home/antkta/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.94.0","date":"2024-10-02T13:08:12.626Z"}}
+2024-10-06 10:42:12.912 [info] Getting Manifest... ms-python.vscode-pylance
+2024-10-06 10:42:13.607 [info] Installing extension: ms-python.vscode-pylance {"installPreReleaseVersion":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/antkta/.vscode-server/extensions/extensions.json","external":"file:///home/antkta/.vscode-server/extensions/extensions.json","path":"/home/antkta/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.94.0","date":"2024-10-02T13:08:12.626Z"}}
+2024-10-06 10:42:13.953 [info] Extension signature verification result for github.copilot-chat: Success. Executed: true. Duration: 1312ms.
+2024-10-06 10:42:14.077 [info] Extracted extension to file:///home/antkta/.vscode-server/extensions/github.copilot-chat-0.21.0: github.copilot-chat
+2024-10-06 10:42:14.080 [info] Renamed to /home/antkta/.vscode-server/extensions/github.copilot-chat-0.21.0
+2024-10-06 10:42:14.099 [info] Extension signature verification result for github.copilot: Success. Executed: true. Duration: 510ms.
+2024-10-06 10:42:14.139 [info] Getting Manifest... ms-python.python
+2024-10-06 10:42:14.275 [info] Extracted extension to file:///home/antkta/.vscode-server/extensions/github.copilot-1.235.0: github.copilot
+2024-10-06 10:42:14.278 [info] Renamed to /home/antkta/.vscode-server/extensions/github.copilot-1.235.0
+2024-10-06 10:42:14.284 [info] Extension installed successfully: github.copilot-chat file:///home/antkta/.vscode-server/extensions/extensions.json
+2024-10-06 10:42:14.284 [info] Extension installed successfully: github.copilot file:///home/antkta/.vscode-server/extensions/extensions.json
+2024-10-06 10:42:14.487 [info] Getting Manifest... ms-python.debugpy
+2024-10-06 10:42:14.509 [info] Installing extension: ms-python.python {"installPreReleaseVersion":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64","dependecyOrPackExtensionInstall":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/antkta/.vscode-server/extensions/extensions.json","external":"file:///home/antkta/.vscode-server/extensions/extensions.json","path":"/home/antkta/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.94.0","date":"2024-10-02T13:08:12.626Z"}}
+2024-10-06 10:42:14.510 [info] Installing extension: ms-python.debugpy {"installPreReleaseVersion":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64","dependecyOrPackExtensionInstall":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/antkta/.vscode-server/extensions/extensions.json","external":"file:///home/antkta/.vscode-server/extensions/extensions.json","path":"/home/antkta/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.94.0","date":"2024-10-02T13:08:12.626Z"}}
+2024-10-06 10:42:18.479 [info] Extension signature verification result for ms-python.vscode-pylance: Success. Executed: true. Duration: 507ms.
+2024-10-06 10:42:18.568 [info] Extension signature verification result for ms-python.debugpy: Success. Executed: true. Duration: 611ms.
+2024-10-06 10:42:18.899 [info] Extracted extension to file:///home/antkta/.vscode-server/extensions/ms-python.debugpy-2024.10.0-linux-x64: ms-python.debugpy
+2024-10-06 10:42:18.902 [info] Renamed to /home/antkta/.vscode-server/extensions/ms-python.debugpy-2024.10.0-linux-x64
+2024-10-06 10:42:20.104 [info] Extension signature verification result for ms-python.python: Success. Executed: true. Duration: 513ms.
+2024-10-06 10:42:21.177 [info] Extracted extension to file:///home/antkta/.vscode-server/extensions/ms-python.python-2024.16.0-linux-x64: ms-python.python
+2024-10-06 10:42:21.184 [info] Renamed to /home/antkta/.vscode-server/extensions/ms-python.python-2024.16.0-linux-x64
+2024-10-06 10:42:21.239 [info] Extracted extension to file:///home/antkta/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2: ms-python.vscode-pylance
+2024-10-06 10:42:21.242 [info] Renamed to /home/antkta/.vscode-server/extensions/ms-python.vscode-pylance-2024.9.2
+2024-10-06 10:42:21.248 [info] Extension installed successfully: ms-python.debugpy file:///home/antkta/.vscode-server/extensions/extensions.json
+2024-10-06 10:42:21.248 [info] Extension installed successfully: ms-python.python file:///home/antkta/.vscode-server/extensions/extensions.json
+2024-10-06 10:42:21.248 [info] Extension installed successfully: ms-python.vscode-pylance file:///home/antkta/.vscode-server/extensions/extensions.json
+2024-10-06 10:46:11.788 [info] [127.0.0.1][e3ce8fd7][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-10-06 10:46:11.829 [info] [127.0.0.1][7f266c64][ExtensionHostConnection] <764> Extension Host Process exited with code: 0, signal: null.

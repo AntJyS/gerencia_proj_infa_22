@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital - Doctores</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('/static/images/hospital-8687007_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Lista de Doctores</h1>
+        <div class="list-group">
+            {% for doctor in doctors %}
+                <div class="list-group-item">
+                    <h5 class="mb-1">{{ doctor.name }}</h5>
+                    <p class="mb-1">{{ doctor.specialty }}</p>
+                    <a href="{{ url_for('book', doctor_id=doctor.id) }}" class="btn btn-primary">Agendar Cita</a>
+                    <a href="{{ url_for('view_appointments', doctor_id=doctor.id) }}" class="btn btn-info">Ver Citas</a>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="mt-4">
+            <a href="{{ url_for('patients_list') }}" class="btn btn-secondary">Ver Pacientes</a>
+        </div>
+    </div>
+
+    <!-- Botón de Chat -->
+    <div class="text-right mt-4">
+        <a href="{{ url_for('chat_page') }}" class="btn btn-primary" id="chat-toggle-btn">Chatea con nosotros</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
